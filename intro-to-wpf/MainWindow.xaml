@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:intro_to_wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="Hello" Height="350" Width="525">
+    <StackPanel>
+        <TextBlock FontSize="24px" TextWrapping="Wrap" VerticalAlignment="Top" Margin="150,100,0,0">
+            Enter your name
+        </TextBlock>
+        <TextBox FontSize="24px" Name="UserName" TextWrapping="Wrap" Margin="150 10 10 0">
+        </TextBox>
+        <Button Name="Ok" Padding="16 4" HorizontalAlignment="Left" FontSize="24px" Margin="150, 10, 10, 0">OK
+        </Button>
+    </StackPanel>
 </Window>
